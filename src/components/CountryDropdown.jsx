@@ -15,25 +15,35 @@ import { HouseContext } from "./HouseContext";
 
 const CountryDropdown = () => {
   const { country, setCountry, countries } = useContext(HouseContext);
+  console.log(countries);
 
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <Menu as="div" className="dropdown relative">
+    <Menu as="div" className="dropdown relative ">
       <Menu.Button
         onClick={() => setIsOpen(!isOpen)}
         className="dropdown-btn w-full text-left"
       >
-        <RiMapPin2Line className="dropDown-icon-primary" />
-        <div>
+        <RiMapPin2Line className="dropdown-icon-primary" />
+        <div className="text-[15px] font-medium leading-tight">
           <div>{country}</div>
-          <div>Select your place</div>
-          {isOpen ? (
-            <RiArrowUpSLine className="dropDown-icon-primary" />
-          ) : (
-            <RiArrowDownSLine className="dropDown-icon-primary" />
-          )}
+          <div className="text-[13px]">Select your place</div>
+         
         </div>
+        {isOpen ? (
+            <RiArrowUpSLine className="dropdown-icon-secondary" />
+          ) : (
+            <RiArrowDownSLine className="dropdown-icon-secondary" />
+          )}
       </Menu.Button>
+      <Menu.Items className='dropdown-menu'>
+
+        {countries.map((country, index)=>{
+          return(
+            <Menu.Item onClick={()=>setCountry(country)} as="li" key={index} className="cursor-pointer hover:to-violet-700 transition"> {country}</Menu.Item>
+          )
+        })}
+      </Menu.Items>
     </Menu>
   );
 };
