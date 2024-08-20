@@ -67,12 +67,25 @@ const PropertyDetails = () => {
                 <img src={house.agent.image} alt="" />
               </div>
               <div >
-                <div className="">{house.agent.name}</div>
+                <div className="font-bold text-lg">{house.agent.name}</div>
                 <Link to="" className="text-violet-700 text-sm">
                   View Listings
                 </Link>
               </div>
             </div>
+            {/* form */}
+            <form className="flex flex-col gap-y-4">
+              <input className="border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm" type="text" placeholder="Name" />
+              <input  className="border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm" type="text" placeholder="Email"/>
+              <input  className="border border-gray-300 focus:border-violet-700 outline-none rounded w-full px-4 h-14 text-sm" type="text" placeholder="Phone"/>
+              <textarea className="border border-gray-300 focus:border-violet-700  outline-none resize-none rounded w-full p-4 h-36 text-sm text-gray-400" placeholder="Message" defaultValue="Hello, I am interested in [Modern apartment]"></textarea>
+              <div className="flex gap-x-2 ">
+                <button className="bg-violet-700 hover:bg-violet-300 text-white rounded p-4 text-sm w-full transition">
+                  Send message
+                </button>
+                <button className="border border-violet-700 text-violet-700 hover:border-violet-500 hover:text-violet-500 rounded p-4 text-sm w-full transition">Call</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

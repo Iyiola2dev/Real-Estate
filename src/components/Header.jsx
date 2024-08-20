@@ -1,11 +1,11 @@
 import { Link } from "react-scroll";
 const Header = () => {
   return (
-    <header className="py-6 mb-12 border-b bg-slate-500">
+    <header className="py-4 mb-12 border-b bg-white">
       <div className="container mx-auto flex justify-between items-center">
         <img
           className="h-[60px]"
-          src="https://res.cloudinary.com/dtlejpoxq/image/upload/v1723813193/Real%20Estate%20Website%20Images/Screenshot_16-8-2024_135810_looka.com-removebg-preview_waxpnq.png"
+          src="https://res.cloudinary.com/dtlejpoxq/image/upload/v1724187506/Screenshot_20-8-2024_215514_looka.com-removebg-preview_lcpjat.png"
           alt="Logo"
         />
         <Link to="/"></Link>
