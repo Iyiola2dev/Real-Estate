@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 const Header = () => {
   return (
-    <header className="py-4 mb-12 border-b bg-white">
+    <header className="py-4 mb-12  bg-white shadow-sm ">
       <div className="container mx-auto flex justify-between items-center">
         <img
           className="h-[60px]"
