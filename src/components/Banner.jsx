@@ -11,6 +11,7 @@ const Banner = () => {
         <span className="text-violet-700">
           Rent
         </span>
+        
         Your Dream House With Us.
        </h1>
        <p className="max-w-[480px] mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis id natus tempore nulla dolor maxime obcaecati neque beatae error ipsum?</p>
