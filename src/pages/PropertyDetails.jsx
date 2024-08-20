@@ -63,11 +63,11 @@ const PropertyDetails = () => {
           </div>
           <div className="flex-1 bg-white w-full mb-8 border border-gray-300 rounded-lg px-6 py-8">
             <div className="flex items-center gap-x-4 mb-8">
-              <div className="w-20 h-20 p-1 border">
+              <div className="w-20 h-20 p-1 border border-gray-300 rounded-full">
                 <img src={house.agent.image} alt="" />
               </div>
-              <div>
-                <div>{house.agent.name}</div>
+              <div >
+                <div className="">{house.agent.name}</div>
                 <Link to="" className="text-violet-700 text-sm">
                   View Listings
                 </Link>
