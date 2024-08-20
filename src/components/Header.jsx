@@ -4,7 +4,7 @@ const Header = () => {
     <header className="py-4 mb-12  bg-white shadow-sm ">
       <div className="container mx-auto flex justify-between items-center">
         <img
-          className="h-[60px]"
+          className="h-[20px] lg:h-[60px]"
           src="https://res.cloudinary.com/dtlejpoxq/image/upload/v1724187506/Screenshot_20-8-2024_215514_looka.com-removebg-preview_lcpjat.png"
           alt="Logo"
         />
